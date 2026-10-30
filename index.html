@@ -100,18 +100,19 @@
 
             var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
 
-            document.getElementById('monto').value = total;
 
-            if(antivirus.checked){
+
+            if(antivirus.checked == true){
                 total = total + antivirus.value*1
             }
-            if(nube.checked){
+            if(nube.checked == true){
                 total = total + nube.value*1
             }
-            if(web.checked){
+            if(web.checked == true){
                 total = total + web.value*1
             }
 
+            document.getElementById('monto').value = total;
             // Quite la alerta pues el input de "Total a pagar" ya cumple con la funcion de está
             // alert("Usted debe:" + total)
         }
