@@ -98,7 +98,7 @@
             console.log(web.checked);
             console.log(paquetes);
 
-
+            var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
 
 
 
@@ -112,7 +112,6 @@
                 total = total + web.value*1
             }
 
-            var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
             document.getElementById('monto').value = total;
             // Quite la alerta pues el input de "Total a pagar" ya cumple con la funcion de está
             // alert("Usted debe:" + total)
