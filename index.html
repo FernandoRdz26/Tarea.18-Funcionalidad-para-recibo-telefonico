@@ -79,18 +79,22 @@
             let antivirus = document.getElementById("antivirus");
             let nube = document.getElementById("nube");
             let web = document.getElementById("web");
-            var paquetes = document.querySelector('input[name="paquetes"]:checked');
+            var paquetes = document.querySelector('#paquetes');
 
         
             if( plan == null ){
                 alert("Seleccione una opcion valida en plan")
             }
+            // if( paquetes.value == ""){
+            //     alert("Seleccione una opcion valida en paquetes")
+            // }
+
             console.log(plan.value);
             console.log(minutos.value);
             console.log(antivirus.checked);
             console.log(nube.checked);
             console.log(web.checked);
-            console.log(paquetes.value);
+            console.log(paquetes);
 
             var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
 
