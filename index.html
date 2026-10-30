@@ -61,8 +61,10 @@
         </select>
         <br>
         <hr color="black">
+
         <label for="monto">Total a pagar</label>
-        <input type="text" name="" id="" readonly>
+        <input type="text" name="monto" id="monto" readonly>
+
         <hr color="black">
         <input type="submit" value="calcular recibo" style="margin-bottom: 8px;" 
             onclick="calcularTotal()">
@@ -98,6 +100,7 @@
 
             var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
 
+            document.getElementById
 
             if(antivirus.checked){
                 total = total + antivirus.value*1
@@ -109,8 +112,7 @@
                 total = total + web.value*1
             }
 
-
-            alert("Haz dado click en el boton Calcular")
+            
             alert("Usted debe:" + total)
         }
 
