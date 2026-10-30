@@ -100,7 +100,7 @@
 
             var total = minutos.value*1 + plan.value*1 + paquetes.value*1;
 
-            document.getElementById
+            document.getElementById('monto').value = total;
 
             if(antivirus.checked){
                 total = total + antivirus.value*1
@@ -112,55 +112,9 @@
                 total = total + web.value*1
             }
 
-            
-            alert("Usted debe:" + total)
+            // Quite la alerta pues el input de "Total a pagar" ya cumple con la funcion de está
+            // alert("Usted debe:" + total)
         }
-
-        // Hacer calculadora, dos variables, multiplicarlas/dividirlas/sumarlas y restarlas, 
-        // si pasa de 100 pones "Te pasas"
-    //     var cantidad1;
-    //     var cantidad2;
-
-    //     cantidad1 = +prompt("Escribe la primera cantidad:");
-    //     cantidad2 = +prompt("Escribe la segunda cantidad:");
-
-        
-    //     var suma = cantidad1 + cantidad2;
-    //     var resta = cantidad1 - cantidad2;
-    //     var division = cantidad1 / cantidad2;
-    //     var multiplicacion = cantidad1 * cantidad2;
- 
-    // alert("El resultado en suma es: " + suma + "\n" + "El resultado en resta es: " + resta 
-    //     + "\n" + "El resultado en división es: " + division + "\n" + "El resultado en multiplicación es: " + 
-    //     multiplicacion
-    //     )
-    //     if(suma > 100){
-    //         alert("Te pasas en la suma")
-    //     }
-    //     else{
-    //         alert("Eres un buen alumno");
-    //     }
-
-    //     var resultadoResta = resta < 0;
-
-    //     if(resultadoResta){
-    //         alert("El resultado de la resta es" + resta + " es negativo :(")
-    //     }
-    //     else{
-    //         alert("El resultado de la resta es " + resta + " es positivo :)")
-    //     }
-    //     if(division > 100){
-    //         alert("Te pasas en la división")
-    //     }
-    //     if(multiplicacion > 100){
-    //         alert("Te pasas en la multiplicación")
-    //     }
-
-    //     alert("Fin del archivo de calculadora");
-
-
     </script>
-
-    <!-- <script src="java.js"></script> -->
 </body>
 </html>
